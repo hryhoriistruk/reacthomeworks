@@ -1,0 +1,12 @@
+.commentList {
+  list-style-type: none;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  padding: 0;
+}
+
+.commentList li {
+  border: 1px solid gray;
+  padding: 0 1em 1em 1em;
+}
