@@ -1,0 +1,53 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.postsList {
+  padding: 2em;
+}
+
+.postForm {
+  padding: 2em;
+}
+
+@media all and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+
+  .postsList {
+    height: 70vw;
+
+    overflow: scroll;
+  }
+
+  .postForm {
+    height: 30vw;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+
+  .postsList {
+    width: 60vw;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .postForm {
+    width: 40vw;
+    height: 100vh;
+  }
+}
