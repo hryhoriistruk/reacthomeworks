@@ -5,14 +5,14 @@ import {decrement, decrementByAmount, increment, incrementByAmount, resetState} 
 
 const App = () => {
 
-    const {xxx} = useAppSelector(state => state.slice1);
+    const {value} = useAppSelector(state => state.slice1);
     const dispatch = useAppDispatch()
 
 
     return (
         <div>
 
-            <h2>{xxx}</h2>
+            <h2>{value}</h2>
 
             <button onClick={() => {
                 dispatch(decrement())
