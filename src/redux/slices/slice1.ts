@@ -4,7 +4,7 @@ type CounterStateType = {
     value: number
 }
 const initialState: CounterStateType = {
-    xxx: 0
+    value: 0
 }
 
 export const counter1Slice = createSlice({
@@ -12,18 +12,18 @@ export const counter1Slice = createSlice({
     initialState: initialState,
     reducers: {
         increment: (state) => {
-            state.xxx = state.xxx + 1
+            state.value = state.value + 1
         },
         decrement: (state) => {
-            state.xxx = state.xxx - 1
+            state.value = state.value - 1
         },
         incrementByAmount: (state,
                             action: PayloadAction<number>) => {
-            state.xxx = state.xxx + action.payload
+            state.value = state.value + action.payload
         },
         decrementByAmount: (state,
                             action: PayloadAction<number>) => {
-            state.xxx = state.xxx - action.payload
+            state.value = state.xxx - action.payload
         },
         resetState: (state) => {
             state.value = 0
