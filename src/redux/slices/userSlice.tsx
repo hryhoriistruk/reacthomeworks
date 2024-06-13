@@ -16,7 +16,7 @@ const userInitState: UserSliceType = {
     user: null
 }
 
-/***********************************   loadUsers   ***********************************/
+
 
 const loadUsers = createAsyncThunk(
     'userSlice/loadUsers',
@@ -34,7 +34,7 @@ const loadUsers = createAsyncThunk(
     }
 )
 
-/***********************************   loadUserById   ***********************************/
+
 
 const loadUserById = createAsyncThunk(
     'userSlice/loadUserById',
@@ -51,7 +51,7 @@ const loadUserById = createAsyncThunk(
     }
 )
 
-/***********************************   userSlice   ***********************************/
+/
 
 export const userSlice = createSlice({
     name: "userSlice",
@@ -69,12 +69,7 @@ export const userSlice = createSlice({
             .addCase(loadUsers.fulfilled, (state, action) => {
                 state.users = action.payload
             })
-    // .addCase(loadUsers.rejected, (state, action) => {
-    //
-    // })
-    // .addMatcher(isFulfilled(loadUsers), (state, action) => {
-    //     // state.isLoaded = true
-    // })
+   
 });
 
 export const userActions = {
