@@ -7,7 +7,7 @@ const urls = {
     },
     posts: {
         base: '/posts',
-        // byId: (id: number): string => urls.posts.base + `/${id}`
+        
     },
     comments: {
         base: '/comments',
