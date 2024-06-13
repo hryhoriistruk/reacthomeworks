@@ -28,7 +28,7 @@ const loadCommentsByPostId = createAsyncThunk(
     }
 );
 
-/***********************************   commentSlice   ***********************************/
+
 
 export const commentSlice = createSlice({
     name: "commentSlice",
@@ -39,10 +39,7 @@ export const commentSlice = createSlice({
             .addCase(loadCommentsByPostId.fulfilled, (state, action) => {
                 state.comments = action.payload
             })
-    // .addCase(loadCommentsByPostId.rejected,(state, action) => {
-    //
-    // })
-
+    
 })
 
 export const commentActions = {
