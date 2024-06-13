@@ -28,7 +28,7 @@ const loadPosts = createAsyncThunk(
     }
 )
 
-/***********************************   postSlice   ***********************************/
+
 
 export const postSlice = createSlice({
     name: 'postSlice',
@@ -39,9 +39,7 @@ export const postSlice = createSlice({
             .addCase(loadPosts.fulfilled, (state, action) => {
                 state.posts = action.payload
             })
-    // .addCase(loadPosts.rejected, (state, action) => {
-    //     //...
-    // })
+   
 });
 
 export const postActions = {
